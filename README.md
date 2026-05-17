@@ -25,13 +25,13 @@ Memory module
 Testbench for simulation
 
 # Pipeline Stages
-1. IF Stage (Instruction Fetch)
+## 1. IF Stage (Instruction Fetch)
 Fetches instructions from instruction memory
 Updates the Program Counter (PC)
 
 Module: IF_IDstage.v
 
-2. ID Stage (Instruction Decode)
+## 2. ID Stage (Instruction Decode)
 Decodes instruction fields
 Reads operands from register file
 Generates control signals
@@ -41,7 +41,7 @@ Modules Used:
 control.v
 regfile.v
 
-3. EXE Stage (Execute)
+## 3. EXE Stage (Execute)
 Performs arithmetic and logical operations
 Processes ALU computations
 
@@ -50,7 +50,7 @@ Modules Used:
 alu.v
 ID_EXEstage.v
 
-4. WB Stage (Write Back)
+## 4. WB Stage (Write Back)
 Writes processed data back to registers
 Handles memory/output updates
 
